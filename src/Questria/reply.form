@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.reply">
+  <grid id="27dc6" binding="replyPanel" layout-manager="GridLayoutManager" row-count="6" column-count="31" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1038" height="191"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="d9793" class="javax.swing.JLabel" binding="profileLbl">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Tiffany"/>
+        </properties>
+      </component>
+      <component id="8d06a" class="javax.swing.JTextPane" binding="replyTextPane" custom-create="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="29" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Fraunces 72pt" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="You should visit Taipei 101 and the National Palace Museum! Great mix of modern and historical learning."/>
+        </properties>
+      </component>
+      <hspacer id="e65c7">
+        <constraints>
+          <grid row="4" column="27" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="3a43b">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="79b3f">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="d5347">
+        <constraints>
+          <grid row="5" column="27" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="7c8dd">
+        <constraints>
+          <grid row="4" column="30" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="f8a8">
+        <constraints>
+          <grid row="2" column="30" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="5"/>
+            <preferred-size width="5" height="5"/>
+            <maximum-size width="5" height="5"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="8564d">
+        <constraints>
+          <grid row="1" column="27" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e3b7d">
+        <constraints>
+          <grid row="1" column="28" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="87f5f">
+        <constraints>
+          <grid row="1" column="29" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="3e39a">
+        <constraints>
+          <grid row="3" column="14" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="d042e">
+        <constraints>
+          <grid row="1" column="26" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="eb">
+        <constraints>
+          <grid row="1" column="25" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <grid id="85e99" binding="votePanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="105" height="35"/>
+            <preferred-size width="105" height="35"/>
+            <maximum-size width="105" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+          <foreground color="-1644826"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <hspacer id="1bdd1">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="79ff0" class="javax.swing.JLabel" binding="upvoteImageLbl">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <hspacer id="de070">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="1" height="1"/>
+                <preferred-size width="1" height="1"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <component id="f7e8b" class="javax.swing.JLabel" binding="downvoteLbl">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="5b13e" class="javax.swing.JLabel" binding="upvoteLbl">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt Soft" size="14" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="22k"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="d9010" class="javax.swing.JButton" binding="replyBtn" custom-create="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="110" height="35"/>
+            <preferred-size width="110" height="35"/>
+            <maximum-size width="110" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1644826"/>
+          <borderPainted value="false"/>
+          <font name="Fraunces 72pt Soft Light" size="14" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Reply"/>
+        </properties>
+      </component>
+      <component id="6ddbd" class="javax.swing.JButton" binding="moreBtn" custom-create="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="45" height="35"/>
+            <preferred-size width="45" height="35"/>
+            <maximum-size width="45" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentY value="0.0"/>
+          <background color="-1644826"/>
+          <font size="14" style="1"/>
+          <foreground color="-16777216"/>
+          <iconTextGap value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.Rules">
+  <grid id="27dc6" binding="rulesPanel" layout-manager="GridLayoutManager" row-count="11" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="8" y="15" width="1108" height="1258"/>
+    </constraints>
+    <properties>
+      <background color="-4797186"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="a67ab" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Our goal is to create a safe, respectful, and knowledge-driven space where everyone can express curiosity and share insights across "/>
+        </properties>
+      </component>
+      <component id="e2074" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Every post, comment, and interaction helps shape the Questria experience — so please follow these rules to keep our community positive  "/>
+        </properties>
+      </component>
+      <component id="bfccc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value=" different topics. "/>
+        </properties>
+      </component>
+      <component id="eb23f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Questria is a community where people ask questions, share answers, and help each other learn."/>
+        </properties>
+      </component>
+      <component id="6e0f0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="and productive."/>
+        </properties>
+      </component>
+      <hspacer id="e2b2f">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="15" height="15"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="f1802">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="1" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="3" height="3"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="d5bb2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt" size="26" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Our Community Guidelines"/>
+        </properties>
+      </component>
+      <grid id="b94e9" binding="rule2Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="90"/>
+            <preferred-size width="-1" height="90"/>
+            <maximum-size width="-1" height="90"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e1574" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 2 — Ask Clearly, Answer Honestly"/>
+            </properties>
+          </component>
+          <component id="9d0cc" class="javax.swing.JLabel" binding="rule2ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="24556">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="9d0e6">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="40dc9">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="ab0d3" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="90"/>
+                <preferred-size width="150" height="50"/>
+                <maximum-size width="-1" height="90"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Keep your questions meaningful, specific, and respectful.  If you answer, provide helpful and factual information.  Do not post spam, misleading content, or unrelated links."/>
+            </properties>
+          </component>
+          <component id="11d07" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="890cc" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c1d9" binding="rule3Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="90"/>
+            <preferred-size width="-1" height="90"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="779f4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 3 — Respect Privacy and Safety"/>
+            </properties>
+          </component>
+          <component id="e1465" class="javax.swing.JLabel" binding="rule3ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="f2655">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="5" height="5"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="fae86">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="70e9b">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="5" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="143b4" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Do not post personal or confidential information about yourself or others. Never share or request inappropriate, explicit, or harmful content. Anonymous posting is allowed for sensitive questions, but still follows all rules."/>
+            </properties>
+          </component>
+          <component id="1b83f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="2a31" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="6a13e" binding="rule4Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <vspacer id="19a5d">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="100"/>
+                <preferred-size width="-1" height="100"/>
+                <maximum-size width="-1" height="100"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="19f17" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 4 — Follow Topic Guidelines"/>
+            </properties>
+          </component>
+          <vspacer id="4d734">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="5" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="30"/>
+                <preferred-size width="-1" height="30"/>
+                <maximum-size width="-1" height="30"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="90f82">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="10"/>
+                <preferred-size width="-1" height="10"/>
+                <maximum-size width="-1" height="10"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="46751" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Keep your questions meaningful, specific, and respectful.  If you answer, provide helpful and factual information.  Do not post spam, misleading content, or unrelated links."/>
+            </properties>
+          </component>
+          <component id="31e0b" class="javax.swing.JLabel" binding="rule4ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="ba8fa" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="ebff1" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <hspacer id="a3bb8">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="1" height="1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <grid id="ccf57" binding="rule1Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="90"/>
+            <preferred-size width="-1" height="90"/>
+            <maximum-size width="-1" height="90"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ecbda" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 1 - Be Respectful and Kind"/>
+            </properties>
+          </component>
+          <vspacer id="3f1fc">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="a3812">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="95af9">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="1eaba" class="javax.swing.JLabel" binding="rule1ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="d3c96" class="javax.swing.JTextPane" binding="rememberTheHumanBehindTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="90"/>
+                <preferred-size width="150" height="90"/>
+                <maximum-size width="-1" height="90"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Remember the human behind every post. Do not harass, insult, or discriminate against others based on identity, opinion, or background. "/>
+            </properties>
+          </component>
+          <component id="3405a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="dcf0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <hspacer id="88605">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="ae41">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="15" height="15"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <grid id="7a07" binding="rule6Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d2d35" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 6 — Keep It Legal and Safe"/>
+            </properties>
+          </component>
+          <component id="329bf" class="javax.swing.JLabel" binding="rule6ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="d0a96">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="6ed86">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="5" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="a16fd" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Do not upload or promote illegal, violent, or harmful content.  Uploaded files (PDF, DOCX, PPT, MP4, ) must be appropriate and virus-free"/>
+            </properties>
+          </component>
+          <component id="e91ac" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="eadeb" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="b9130">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="5" height="5"/>
+              </grid>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+      <grid id="f20f" binding="rule5Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="209ea" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 5 — No Spam or Manipulation"/>
+            </properties>
+          </component>
+          <component id="465ba" class="javax.swing.JLabel" binding="rule5ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="17211">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="5" height="5"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="c61ca">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="f0b2d">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="5" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="4148c" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Avoid repetitive posting, vote manipulation, fake accounts, or comment flooding.  Rate limits exist to prevent spam and ensure fair participation for everyone."/>
+            </properties>
+          </component>
+          <component id="825fe" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="28f39" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="68497" binding="rule7Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f3bb6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 7 — Use Points Responsibly"/>
+            </properties>
+          </component>
+          <component id="3678" class="javax.swing.JLabel" binding="rule7iamgeLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="e2778">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="5" height="5"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="eaef7">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="cf5bf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="5" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="cf290" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Avoid repetitive posting, vote manipulation, fake accounts, or comment flooding.  Rate limits exist to prevent spam and ensure fair participation for everyone."/>
+            </properties>
+          </component>
+          <component id="6779c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="82be0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="aad67" binding="rule8Panel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="93aad" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Rule 8 — Respect Moderators and Admins"/>
+            </properties>
+          </component>
+          <component id="af176" class="javax.swing.JLabel" binding="rule8ImageLbl">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="2ca2b">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="5" height="5"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="92f7">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="34310">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="5" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="3e5d3" class="javax.swing.JTextPane" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-657931"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Do not upload or promote illegal, violent, or harmful content.  Uploaded files (PDF, DOCX, PPT, MP4, ) must be appropriate and virus-free"/>
+            </properties>
+          </component>
+          <component id="e70fe" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="53e4b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

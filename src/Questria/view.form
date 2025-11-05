@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.view">
+  <grid id="27dc6" binding="viewPanel" layout-manager="GridLayoutManager" row-count="6" column-count="1625" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="91" width="32858" height="257"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="b1cbf" binding="pointsPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1621" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="90" height="35"/>
+            <preferred-size width="90" height="35"/>
+            <maximum-size width="90" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5cd29" class="javax.swing.JLabel" binding="pointsLbl">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt SemiBold" size="14" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="+15 pts"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="6af68" class="javax.swing.JButton" binding="bookmarkBtn" custom-create="true">
+        <constraints>
+          <grid row="0" column="1622" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="45" height="35"/>
+            <preferred-size width="45" height="35"/>
+            <maximum-size width="45" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1644826"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d7b3b" class="javax.swing.JButton" binding="moreBtn" custom-create="true">
+        <constraints>
+          <grid row="0" column="1623" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="45" height="35"/>
+            <preferred-size width="45" height="35"/>
+            <maximum-size width="45" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1644826"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <hspacer id="de6e">
+        <constraints>
+          <grid row="0" column="1620" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="6c31c" class="javax.swing.JLabel" binding="titleLbl">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1571" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft SemiBold" size="20" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="What are the best places to visit in Taiwan?"/>
+        </properties>
+      </component>
+      <grid id="4eff3" binding="tagsPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1220" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="35"/>
+            <preferred-size width="100" height="35"/>
+            <maximum-size width="100" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="86aca" class="javax.swing.JLabel" binding="tagsLbl">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt SemiBold" size="14" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Itineraries"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="34bf6" class="javax.swing.JTextPane" binding="bodyTextPane">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1623" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Fraunces 72pt" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="I want to visit Taiwan but I just do not know what places to go. I’ve heard there are a lot of beautiful spots, from nature to night markets, but I’m not sure where to start. Can anyone recommend must-visit destinations, hidden gems, or local experiences? I’d love to know about both popular attractions and places that are off the beaten path."/>
+        </properties>
+      </component>
+      <hspacer id="b0295">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="3" height="3"/>
+            <maximum-size width="3" height="3"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="7b9bf">
+        <constraints>
+          <grid row="0" column="1624" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="3" height="3"/>
+            <maximum-size width="3" height="3"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="9cbc8">
+        <constraints>
+          <grid row="0" column="1619" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e32e">
+        <constraints>
+          <grid row="0" column="1618" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="edf22">
+        <constraints>
+          <grid row="0" column="1617" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="648e6">
+        <constraints>
+          <grid row="0" column="1616" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="a44a5">
+        <constraints>
+          <grid row="0" column="1611" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="4c021">
+        <constraints>
+          <grid row="0" column="1607" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="9ecee">
+        <constraints>
+          <grid row="0" column="1604" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="20aee">
+        <constraints>
+          <grid row="0" column="1603" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="9f4d7">
+        <constraints>
+          <grid row="0" column="1601" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="2abdf">
+        <constraints>
+          <grid row="0" column="1597" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="3a628">
+        <constraints>
+          <grid row="0" column="1595" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="fdd4e">
+        <constraints>
+          <grid row="0" column="1592" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="25c73" class="javax.swing.JLabel" binding="backLbl">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <hspacer id="d9f84">
+        <constraints>
+          <grid row="5" column="1222" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <grid id="ab0d0" binding="votePanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="7" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="105" height="35"/>
+            <preferred-size width="105" height="35"/>
+            <maximum-size width="105" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-657931"/>
+          <foreground color="-1644826"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <hspacer id="b9566">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="85b1f" class="javax.swing.JLabel" binding="upvoteImageLbl">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <hspacer id="5bb24">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="1" height="1"/>
+                <preferred-size width="1" height="1"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <component id="b4e05" class="javax.swing.JLabel" binding="downvoteLbl">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="7b578" class="javax.swing.JLabel" binding="upvoteLbl">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt Soft" size="14" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="22k"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="4cf94" class="javax.swing.JLabel" binding="profileLbl">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Tiffany"/>
+        </properties>
+      </component>
+      <component id="8f4fa" class="javax.swing.JLabel" binding="timeLbl">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="11" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="16" style="0"/>
+          <foreground color="-9079435"/>
+          <text value="6h ago"/>
+        </properties>
+      </component>
+      <component id="35f64" class="javax.swing.JLabel" binding="topicsLbl">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Black" size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Travel"/>
+        </properties>
+      </component>
+      <vspacer id="47eb4">
+        <constraints>
+          <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="2bb90" class="javax.swing.JButton" binding="commentBtn" custom-create="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="35"/>
+            <preferred-size width="150" height="35"/>
+            <maximum-size width="150" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1644826"/>
+          <borderPainted value="false"/>
+          <font name="Fraunces 72pt Soft Light" size="14" style="0"/>
+          <foreground color="-16777216"/>
+          <iconTextGap value="2"/>
+          <text value="Comments"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

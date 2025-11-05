@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.SignUp">
+  <grid id="27dc6" binding="signUpPanel" layout-manager="GridLayoutManager" row-count="7" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="643"/>
+    </constraints>
+    <properties>
+      <background color="-3351555"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="d099" class="javax.swing.JButton" binding="signUpButton" custom-create="true" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <font name="Fraunces 72pt Soft" size="26" style="1"/>
+          <foreground color="-1"/>
+          <text value="Sign Up"/>
+        </properties>
+      </component>
+      <grid id="f5c89" binding="signUpDetailsPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="13" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none">
+          <color color="-16777216"/>
+        </border>
+        <children>
+          <component id="85a60" class="javax.swing.JLabel" binding="emailLbl">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Email Address"/>
+            </properties>
+          </component>
+          <component id="8530e" class="javax.swing.JTextField" binding="emailTextField1" custom-create="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1644826"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="1"/>
+            </properties>
+          </component>
+          <component id="cadee" class="javax.swing.JLabel" binding="usernameLbl">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Username"/>
+            </properties>
+          </component>
+          <component id="f578e" class="javax.swing.JTextField" binding="usernameTextField1" custom-create="true">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1644826"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="1"/>
+            </properties>
+          </component>
+          <component id="f5b05" class="javax.swing.JLabel" binding="passwordLbl">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="53db0" class="javax.swing.JLabel" binding="confirmPassLbl">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Confirm Password"/>
+            </properties>
+          </component>
+          <vspacer id="57447">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="30" height="30"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <hspacer id="46baf">
+            <constraints>
+              <grid row="4" column="2" row-span="2" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="25"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <hspacer id="86dd7">
+            <constraints>
+              <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="25"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <vspacer id="c6359">
+            <constraints>
+              <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="100"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="a1bb1">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="20"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="a6b3e">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="20"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="77a9f">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="20"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="18d83" class="javax.swing.JPasswordField" binding="passwordField" custom-create="true">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1644826"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="1"/>
+            </properties>
+          </component>
+          <component id="89bea" class="javax.swing.JPasswordField" binding="confirmPasswordField" custom-create="true">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1644826"/>
+              <font name="Fraunces 72pt Soft Light" size="18" style="1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <hspacer id="a680">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="25" height="25"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="22e3">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="25" height="25"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="addd2">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="1" height="1"/>
+            <maximum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="3a45e">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="10" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="a7661">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="40" height="40"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="b7277">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="bf970">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="978bf">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="75" height="75"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="16d87">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="75" height="75"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="1f56a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Fraunces 72pt Soft Light" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Already have an account?"/>
+        </properties>
+      </component>
+      <component id="2ccc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Sign Up"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

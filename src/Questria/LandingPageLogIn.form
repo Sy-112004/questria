@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.LandingPageLogIn">
+  <grid id="27dc6" binding="LandingPageLogInPanel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1028" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-3351555"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="f3bbb" class="javax.swing.JLabel" binding="questriaLbl">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt" size="90" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Questria"/>
+        </properties>
+      </component>
+      <hspacer id="48d22">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="59b29" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt SemiBold" size="36" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="ASK.SHARE.UNDERSTAND"/>
+        </properties>
+      </component>
+      <vspacer id="37216">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="9a9f7">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="6872f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Poppins Light" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Questria is a community-driven Q&amp;A platform where learners "/>
+        </properties>
+      </component>
+      <component id="9922b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Poppins Light" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="post questions and others share clear, helpful answers. "/>
+        </properties>
+      </component>
+      <component id="1298a" class="javax.swing.JButton" binding="signUpButton" custom-create="true" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <font name="Fraunces 72pt" size="36" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Sign Up"/>
+        </properties>
+      </component>
+      <component id="836b9" class="javax.swing.JButton" binding="logInButton" custom-create="true" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Fraunces 72pt Soft" size="36" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Log In"/>
+        </properties>
+      </component>
+      <vspacer id="4c05c">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="25" height="25"/>
+          </grid>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

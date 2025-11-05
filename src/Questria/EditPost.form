@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.EditPost">
+  <grid id="27dc6" binding="editPostPanel" layout-manager="GridLayoutManager" row-count="10" column-count="13" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="583" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="98656" class="javax.swing.JLabel" binding="backLbl">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e5799" class="javax.swing.JLabel" binding="profileLbl">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft Light" size="18" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Tiffany"/>
+        </properties>
+      </component>
+      <component id="3e5c0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft" size="20" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Edit Post"/>
+        </properties>
+      </component>
+      <component id="16277" class="javax.swing.JButton" binding="pointsBtn" custom-create="true">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="80" height="35"/>
+            <preferred-size width="80" height="35"/>
+            <maximum-size width="80" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Fraunces 72pt SemiBold" size="14" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="0 pts"/>
+        </properties>
+      </component>
+      <component id="3af51" class="javax.swing.JComboBox" binding="anonymousComboBox" custom-create="true">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Fraunces 72pt Soft SemiBold" size="14" style="0"/>
+          <foreground color="-16777216"/>
+          <model>
+            <item value="anonymous"/>
+            <item value="not anonymous"/>
+          </model>
+        </properties>
+      </component>
+      <component id="2fd21" class="javax.swing.JComboBox" binding="topicComboBox" custom-create="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="11" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Fraunces 72pt Soft SemiBold" size="14" style="0"/>
+          <foreground color="-16777216"/>
+          <model>
+            <item value="Topic"/>
+            <item value="Education"/>
+            <item value="Travel"/>
+            <item value="Movies &amp; TV"/>
+            <item value="Games"/>
+            <item value="Foods"/>
+            <item value="Music"/>
+          </model>
+        </properties>
+      </component>
+      <component id="bca1" class="javax.swing.JTextField" binding="titleTextField" custom-create="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="11" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Fraunces 72pt Soft SemiBold" size="20" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Title"/>
+        </properties>
+      </component>
+      <component id="4547f" class="javax.swing.JButton" binding="tagsButton" custom-create="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="80" height="35"/>
+            <preferred-size width="80" height="35"/>
+            <maximum-size width="80" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-9079435"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Fraunces 72pt SemiBold" size="14" style="0"/>
+          <foreground color="-16777216"/>
+          <text value=" Add tags"/>
+        </properties>
+      </component>
+      <scrollpane id="4fb8b" binding="bodyScrollPane" custom-create="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="11" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="938de" class="javax.swing.JTextArea" binding="bodyTextArea" custom-create="true">
+            <constraints/>
+            <properties>
+              <font name="Fraunces 72pt Light" size="16" style="0"/>
+              <foreground color="-16777216"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="a0e20" class="javax.swing.JLabel" binding="mediaUploadLbl">
+        <constraints>
+          <grid row="6" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="fc0b0" class="javax.swing.JLabel" binding="imageUploadLbl">
+        <constraints>
+          <grid row="6" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="76d4e" class="javax.swing.JLabel" binding="fileUploadLbl">
+        <constraints>
+          <grid row="6" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b7053" class="javax.swing.JButton" binding="saveChangesBtn" custom-create="true">
+        <constraints>
+          <grid row="8" column="10" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="35"/>
+            <preferred-size width="150" height="35"/>
+            <maximum-size width="150" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Fraunces 72pt Soft" size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Save Changes"/>
+        </properties>
+      </component>
+      <component id="63946" class="javax.swing.JButton" binding="cancelBtn" custom-create="true">
+        <constraints>
+          <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="35"/>
+            <preferred-size width="100" height="35"/>
+            <maximum-size width="100" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Fraunces 72pt Soft" size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+      <hspacer id="3c0f3">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="15" height="15"/>
+            <preferred-size width="15" height="15"/>
+            <maximum-size width="15" height="15"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="bee2c">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="70"/>
+            <preferred-size width="70" height="70"/>
+            <maximum-size width="70" height="70"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="b78a3">
+        <constraints>
+          <grid row="5" column="12" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="25" height="25"/>
+            <preferred-size width="25" height="25"/>
+            <maximum-size width="25" height="25"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="6fd8d">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="f70e8">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>

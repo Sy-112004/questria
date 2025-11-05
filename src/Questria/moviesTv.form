@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Questria.moviesTv">
+  <grid id="27dc6" binding="moviesTvPanel" layout-manager="GridLayoutManager" row-count="4" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="74c94" class="javax.swing.JLabel" binding="moviesTvLbl">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Fraunces 72pt Soft SemiBold" size="28" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Movies &amp; TV"/>
+        </properties>
+      </component>
+      <component id="8515e" class="javax.swing.JButton" binding="followMoviesTvButton" custom-create="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="120" height="35"/>
+            <maximum-size width="120" height="35"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10902056"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Fraunces 72pt Soft SemiBold" size="16" style="0"/>
+          <foreground color="-16777216"/>
+          <horizontalAlignment value="0"/>
+          <text value="Follow"/>
+        </properties>
+      </component>
+      <component id="48eea" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="1"/>
+            <preferred-size width="-1" height="1"/>
+            <maximum-size width="-1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <foreground color="-16777216"/>
+        </properties>
+      </component>
+      <vspacer id="86aaa">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="32a6">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="3ecf4">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="89d79">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>
