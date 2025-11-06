@@ -2,6 +2,10 @@ package Questria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class LogIn {
     private JPanel logInPanel;
@@ -14,6 +18,23 @@ public class LogIn {
     private JPasswordField passwordField;
     private JLabel signupLbl;
 
+    PageBuilder pageBuilder = new PageBuilder();
+
+    public LogIn() {
+        logInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showFollowTopicPage();
+            }
+        });
+        signupLbl.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                pageBuilder.showSignUpPage();
+            }
+        });
+    }
 
     public JPanel getLogInPanel() {
         return logInPanel;

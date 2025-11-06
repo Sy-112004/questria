@@ -2,6 +2,8 @@ package Questria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GuestSideBar {
     private JPanel GuestSideBarPanel;
@@ -24,6 +26,47 @@ public class GuestSideBar {
 //    ImageIcon moviesTVIcon = new ImageIcon(new ImageIcon("assets/movies.png").getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
 //    ImageIcon gamesIcon = new ImageIcon(new ImageIcon("assets/games.png").getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
 //    ImageIcon foodsDrinksIcon = new ImageIcon( new ImageIcon("assets/food.png").getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
+
+    PageBuilder pageBuilder = new PageBuilder();
+
+    public GuestSideBar() {
+        educationBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showGuestEducationTopicPage();
+            }
+        });
+        travelBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showGuestTravelPage();
+            }
+        });
+        moviesTVBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showGuestMoviesTvPage();
+            }
+        });
+        gamesBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showGuestGamesPage();
+            }
+        });
+        foodsDrinksBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showGuestFoodsPage();
+            }
+        });
+        musicBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showGuestMusicPage();
+            }
+        });
+    }
 
     public JPanel getGuestSideBarPanel() {
         homeBtn.setIcon(homeIcon);
