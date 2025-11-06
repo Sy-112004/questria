@@ -26,6 +26,18 @@ public class LandingPageHeader {
                 pageBuilder.showGuestHomePage();
             }
         });
+        homeBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showLandingPage();
+            }
+        });
+        aboutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showAboutQuestriaPage();
+            }
+        });
     }
 
     public JPanel getLandingPageHeaderPanel() {

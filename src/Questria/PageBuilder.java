@@ -10,6 +10,9 @@ public class PageBuilder {
 
     LandingPage landingPage = new LandingPage();
     GuestHomepage guestHomepage = new GuestHomepage();
+    SignUpPage signUpPage = new SignUpPage();
+    LogInPage logInPage = new LogInPage();
+    AboutQuestriaPage aboutQuestriaPage = new AboutQuestriaPage();
 
     public void showPage (JFrame currentFrame){
         currentFrame.setVisible(true);
@@ -47,6 +50,27 @@ public class PageBuilder {
     public void showGuestHomePage(){
         showPage(guestHomepage.getGuestHomePageFrame());
         hidePage(landingPage.getLandingPageFrame());
+    }
+
+    public void showLogInPage(){
+        showPage(logInPage.getLogInPageFrame());
+        hidePage(signUpPage.getSignUpPage());
+        hidePage(guestHomepage.getGuestHomePageFrame());
+        hidePage(landingPage.getLandingPageFrame());
+    }
+
+    public void showAboutQuestriaPage(){
+        showPage(aboutQuestriaPage.getAboutQuestriaPageFrame());
+        hidePage(signUpPage.getSignUpPage());
+        hidePage(guestHomepage.getGuestHomePageFrame());
+        hidePage(landingPage.getLandingPageFrame());
+        hidePage(logInPage.getLogInPageFrame());
+    }
+
+    public void showSignUpPage(){
+        hidePage(guestHomepage.getGuestHomePageFrame());
+        hidePage(landingPage.getLandingPageFrame());
+        showPage(signUpPage.getSignUpPage());
     }
 
 

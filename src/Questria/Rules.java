@@ -23,9 +23,26 @@ public class Rules {
     private JPanel rule7Panel;
     private JPanel rule8Panel;
 
-//    ImageIcon
+    ImageIcon rule1Icon = new ImageIcon(new ImageIcon("assets/rule1.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule2Icon = new ImageIcon(new ImageIcon("assets/comment.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule3Icon = new ImageIcon(new ImageIcon("assets/lock.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule4Icon = new ImageIcon(new ImageIcon("assets/4.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule5Icon = new ImageIcon(new ImageIcon("assets/5.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule6Icon = new ImageIcon(new ImageIcon("assets/6.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule7Icon = new ImageIcon(new ImageIcon("assets/7.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+    ImageIcon rule8Icon = new ImageIcon(new ImageIcon("assets/8.png").getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+
 
     public JPanel getRulesPanel() {
+        rule1ImageLbl.setIcon(rule1Icon);
+        rule2ImageLbl.setIcon(rule2Icon);
+        rule3ImageLbl.setIcon(rule3Icon);
+        rule4ImageLbl.setIcon(rule4Icon);
+        rule5ImageLbl.setIcon(rule5Icon);
+        rule6ImageLbl.setIcon(rule6Icon);
+        rule7iamgeLbl.setIcon(rule7Icon);
+        rule8ImageLbl.setIcon(rule8Icon);
+
         return rulesPanel;
     }
 
@@ -96,6 +113,23 @@ public class Rules {
         rule8Panel.revalidate();
         rule8Panel.repaint();
 
+        Dimension ruleSize = new Dimension(320, 300);
+
+        JPanel[] panels = {
+                rule1Panel, rule2Panel, rule3Panel, rule4Panel,
+                rule5Panel, rule6Panel, rule7Panel, rule8Panel
+        };
+
+        for (JPanel p : panels) {
+            p.setPreferredSize(ruleSize);
+            p.setMinimumSize(ruleSize);
+            p.setMaximumSize(ruleSize);
+        }
+
+//        // if using a layout that respects preferred sizes (like FlowLayout/BoxLayout),
+//        // call:
+//        rulesPanel.revalidate();
+//        rulesPanel.repaint();
 
 
     }

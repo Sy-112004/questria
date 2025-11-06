@@ -39,8 +39,19 @@ public class ViewPost {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JPopupMenu popup = Questria.PopUp.UserPopupOnOwnPost.build(
-                        () -> System.out.println("Edit clicked"),
+                        // EDIT: open EditPostPage and close current window
+                        () -> {
+                            // close the window that contains this view
+                            Window w = SwingUtilities.getWindowAncestor(viewPostPanel);
+                            if (w != null) w.dispose();
+
+                            // open EditPostPage
+                            EditPostPage edit = new EditPostPage();
+                            edit.getEditPostPageFrame(); // ensure this method shows the frame
+                        },
+                        // DELETE
                         () -> System.out.println("Delete clicked"),
+                        // LOCK
                         () -> System.out.println("Lock clicked")
                 );
                 popup.show(moreBtn, 0, moreBtn.getHeight() + 6);

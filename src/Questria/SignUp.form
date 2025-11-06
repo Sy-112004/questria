@@ -239,14 +239,14 @@
           <text value="Already have an account?"/>
         </properties>
       </component>
-      <component id="2ccc" class="javax.swing.JLabel">
+      <component id="2ccc" class="javax.swing.JLabel" binding="logInLbl">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Fraunces 72pt Soft Light" size="16" style="0"/>
           <foreground color="-16777216"/>
-          <text value="Sign Up"/>
+          <text value="Log In"/>
         </properties>
       </component>
     </children>

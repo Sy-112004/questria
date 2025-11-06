@@ -1,8 +1,12 @@
 package Questria;
 
+import Questria.PopUp.EducationTagsPopup;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class CreatePost {
     private JPanel createPostPanel;
@@ -34,55 +38,74 @@ public class CreatePost {
         imageUploadLbl.setIcon(imageUploadIcon);
         fileUploadLbl.setIcon(fileUploadIcon);
         mediaUploadLbl.setIcon(mediaUploadIcon);
+
+        // Add listeners after panel is created
+        setupListeners();
+
         return createPostPanel;
     }
+
+    // NEW METHOD: Setup listeners for ComboBox and Button
+    private void setupListeners() {
+        // ComboBox listener - enable tagsButton only when Education is selected
+        topicComboBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedTopic = (String) topicComboBox.getSelectedItem();
+                tagsButton.setEnabled("Education".equals(selectedTopic));
+            }
+        });
+
+        // Tags button listener - show popup when clicked
+        tagsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedTopic = (String) topicComboBox.getSelectedItem();
+                if ("Education".equals(selectedTopic)) {
+                    // Get parent frame
+                    JFrame parentFrame = (JFrame) SwingUtilities.getWindowAncestor(createPostPanel);
+
+                    // Show popup
+                    EducationTagsPopup popup = new EducationTagsPopup(parentFrame);
+                    popup.setVisible(true);
+
+                    // Get selected tags after popup closes
+                    java.util.List<String> tags = popup.getSelectedTags();
+                    if (!tags.isEmpty()) {
+                        System.out.println("Selected tags: " + tags);
+                        // You can store these tags or display them somewhere
+                    }
+                }
+            }
+        });
+    }
+
     private void createUIComponents() {
-        // TODO: place custom component creation code here
+        // ... your existing code ...
 
-//        postBtn = new RoundedButton("",30,Color.decode("#59A5D8"),Color.WHITE);
-//        cancelBtn = new RoundedButton("",30,Color.decode("#59A5D8"),Color.WHITE);
-//        pointsBtn = new RoundedButton("",30,Color.decode("#59A5D8"),Color.WHITE);
-//
-//        anonymousComboBox = new RoundedComboBox<>(20);
-//
-//        topicComboBox = new RoundedComboBox<>(20);
-//
-//        titleTextField = new RoundedTextField(50);
-//        titleTextField.setBorder(new LineBorder(new Color(0xCCCCCC), 1, true)); // gray, 1px, rounded
-//
-//        bodyTextPane = new RoundedTextPane(20); // 20px corner radius
-//        bodyScrollPane = new JScrollPane(bodyTextPane);
-//        bodyScrollPane.setBorder(new LineBorder(new Color(0xCCCCCC), 1));
-//        bodyTextPane.setBorder(BorderFactory.createEmptyBorder(8, 10, 8, 10)); // padding
-
-
-        // --- Custom components (your rounded controls) ---
         if (postBtn == null) postBtn = new RoundedButton("Post", 30, Color.decode("#59A5D8"), Color.WHITE);
         if (cancelBtn == null) cancelBtn = new RoundedButton("Cancel", 30, Color.decode("#59A5D8"), Color.WHITE);
         if (pointsBtn == null) pointsBtn = new RoundedButton("", 30, Color.decode("#59A5D8"), Color.WHITE);
-        if (tagsButton == null) tagsButton = new RoundedButton("", 30, Color.decode("#F5F5F5"), Color.WHITE);
+        if (tagsButton == null) {
+            tagsButton = new RoundedButton("Add tags", 30, Color.decode("#F5F5F5"), Color.decode("#333333"));
+            tagsButton.setEnabled(false); // Initially disabled
+        }
 
         topicComboBox = new RoundedComboBox<>(20);
         if (anonymousComboBox == null){ anonymousComboBox = new RoundedComboBox<>(20);}
-
         if (topicComboBox == null) topicComboBox = new RoundedComboBox<>(20);
 
         topicComboBox.setPreferredSize(new Dimension(140, 36));
         topicComboBox.setMaximumSize(topicComboBox.getPreferredSize());
-//        topicComboBox.getWidth(220); // pick your desired width
-        topicComboBox.setEditable(false); // avoid editor resizing
-
-
-
+        topicComboBox.setEditable(false);
 
         if (titleTextField == null) {
             titleTextField = new RoundedTextField(35);
-//            titleTextField.setBorder(new LineBorder(new Color(0xCCCCCC), 1, true)); // gray, 1px, rounded
         }
 
         if(bodyTextArea == null){
             bodyTextArea = new RoundedTextArea(35);
-            bodyTextArea.setBackground(Color.WHITE); // or any color you want
+            bodyTextArea.setBackground(Color.WHITE);
             bodyTextArea.setForeground(Color.BLACK);
             bodyTextArea.setBorder(BorderFactory.createCompoundBorder(
                     new LineBorder(new Color(0xCCCCCC), 10, true),
@@ -90,22 +113,15 @@ public class CreatePost {
             ));
         }
 
-
-        // put it in a scroll pane but remove the rectangular scrollpane border
         bodyScrollPane = new JScrollPane(bodyTextArea);
-        bodyScrollPane.setBorder(BorderFactory.createEmptyBorder()); // no rectangular frame
+        bodyScrollPane.setBorder(BorderFactory.createEmptyBorder());
         bodyScrollPane.setViewportBorder(null);
         bodyScrollPane.setOpaque(false);
         bodyScrollPane.getViewport().setOpaque(false);
-
-        // if you want the scrollbars to be visible only when needed:
         bodyScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
-        // Additional defensive styling (optional)
         try {
-            // if the GUI designer later calls setBackground on locals, the fields are non-null now.
-            createPostPanel.setBackground(Color.WHITE); // safe default
+            createPostPanel.setBackground(Color.WHITE);
         } catch (Exception ignored) {}
-
     }
 }

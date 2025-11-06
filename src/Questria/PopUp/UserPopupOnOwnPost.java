@@ -23,7 +23,7 @@ public class UserPopupOnOwnPost {
                 return base.deriveFont(Font.BOLD, 16f);
             }
         } catch (Exception ignored) {}
-        return new Font("Serif", Font.BOLD, 16);
+        return new Font("Fraunces 72pt", Font.BOLD, 16);
     }
 
     /** Build: Edit / Delete / Lock */
@@ -34,9 +34,15 @@ public class UserPopupOnOwnPost {
         Icon deleteIcon = loadIconSmart("delete.png", "trash.png", "bin.png");
         Icon lockIcon   = loadIconSmart("lock.png", "padlock.png");
 
+        // Show confirmation dialog before actual delete
         popup.add(menuItem("Edit",   editIcon,   onEdit));
-        popup.add(menuItem("Delete", deleteIcon, onDelete));
-        popup.add(menuItem("Lock",   lockIcon,   onLock));
+        popup.add(menuItem("Delete", deleteIcon, () -> {
+            DeleteConfirmationDialog.show(popup.getInvoker(), onDelete);
+        }));
+//        popup.add(menuItem("Lock",   lockIcon,   onLock));
+        popup.add(menuItem("Lock", lockIcon, () -> {
+            LockConfirmationDialog.show(popup.getInvoker(), onLock);
+        }));
 
         return popup;
     }
@@ -111,19 +117,39 @@ public class UserPopupOnOwnPost {
             this.arc = arc;
             this.shadow = shadow;
 
-            // make the popup window itself transparent
+            // CRITICAL: Force complete transparency to remove white rectangle
             setOpaque(false);
             setBackground(new Color(0, 0, 0, 0));
             setBorder(new EmptyBorder(12, 16, 12, 16));
+            setBorderPainted(false);
+
+            // Force lightweight popup to avoid heavyweight window issues
+            setLightWeightPopupEnabled(true);
         }
 
-        @Override public boolean isOpaque() { return false; }
+        @Override
+        public void setVisible(boolean b) {
+            super.setVisible(b);
+            if (b) {
+                // Make the popup window transparent
+                Window window = SwingUtilities.getWindowAncestor(this);
+                if (window != null) {
+                    window.setBackground(new Color(0, 0, 0, 0));
+                }
+            }
+        }
+
+        @Override public boolean isOpaque() {
+            return false;
+        }
 
         @Override public void updateUI() {
             super.updateUI();
-            // some LAFs reset opacity; force transparency again
+            // Force transparency even after UI updates
             setOpaque(false);
             setBackground(new Color(0, 0, 0, 0));
+            setBorderPainted(false);
+            setLightWeightPopupEnabled(true);
         }
 
         @Override protected void paintComponent(Graphics g) {
