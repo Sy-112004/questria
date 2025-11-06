@@ -2,6 +2,8 @@ package Questria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ViewProfile {
     private JPanel viewProfilePanel;
@@ -18,6 +20,34 @@ public class ViewProfile {
     ImageIcon editIcon = new ImageIcon(new ImageIcon("assets/edit.png").getImage().getScaledInstance(18,18,Image.SCALE_SMOOTH));
     ImageIcon badgeSilverIcon = new ImageIcon(new ImageIcon("assets/badge_silver.png").getImage().getScaledInstance(20,20,Image.SCALE_SMOOTH));
 
+    PageBuilder pageBuilder = new PageBuilder();
+
+//    public ViewProfile() {
+//        postBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserViewProfile();
+//            }
+//        });
+//        commentsButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserViewProfileCommentsPage();
+//            }
+//        });
+//        upvotedBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserViewProfileUpvotedPage();
+//            }
+//        });
+//        downvotedBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserViewProfileDownvotedPage();
+//            }
+//        });
+//    }
 
     public JPanel getViewProfilePanel() {
         profileLbl.setIcon(profileIcon);

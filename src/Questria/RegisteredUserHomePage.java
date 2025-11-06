@@ -35,7 +35,7 @@ public class RegisteredUserHomePage {
 
          registeredUserHomePageFrame.setLayout(null);
          registeredUserHomePageFrame.setTitle("Questria : RegisteredUserHomePage");
-         registeredUserHomePageFrame.setResizable(true);
+         registeredUserHomePageFrame.setResizable(false);
 
          registeredUserHomePageFrame.add(registeredUserSideBarPanel.getRegisteredUserSideBarPanel());
          registeredUserHomePageFrame.add(registeredUserHeaderPanel.getRegisteredUserHeaderPanel());

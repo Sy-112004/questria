@@ -2,6 +2,8 @@ package Questria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GuestHeader {
 
@@ -13,6 +15,22 @@ public class GuestHeader {
     private JLabel searchLbl;
 
     ImageIcon searchIcon = new ImageIcon(new ImageIcon("assets/search.png").getImage().getScaledInstance(30,30, Image.SCALE_DEFAULT));
+
+    PageBuilder pageBuilder = new PageBuilder();
+    public GuestHeader() {
+        signupBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showSignUpPage();
+            }
+        });
+        logInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pageBuilder.showLogInPage();
+            }
+        });
+    }
 
     public JPanel getGuestHeaderPanel() {
         searchLbl.setIcon(searchIcon);

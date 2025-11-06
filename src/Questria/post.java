@@ -4,6 +4,10 @@ import Questria.PopUp.AdminPopupOnPost;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class post { // consider renaming to Post
     private JPanel postPanel;
@@ -27,6 +31,7 @@ public class post { // consider renaming to Post
     ImageIcon commentIcon = new ImageIcon(new ImageIcon("assets/comment.png").getImage().getScaledInstance(25,25,Image.SCALE_DEFAULT));
     ImageIcon moreIcon = new ImageIcon( new ImageIcon("assets/more.png").getImage().getScaledInstance(25,25,Image.SCALE_DEFAULT));
 
+    PageBuilder pageBuilder = new PageBuilder();
     public post() {
         // SINGLE listener only:
         if (moreBtn == null) moreBtn = new JButton(); // GUI designer may overwrite; this is safe
@@ -38,6 +43,19 @@ public class post { // consider renaming to Post
             );
             popup.show(moreBtn, 0, moreBtn.getHeight() + 6);
         });
+//        postPanel.addMouseListener(new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                super.mouseClicked(e);
+//                pageBuilder.showGuestViewPostPage();
+//            }
+//        });
+//        commentBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserCommentOnPostPage();
+//            }
+//        });
     }
 
     public JPanel getPostPanel() {
