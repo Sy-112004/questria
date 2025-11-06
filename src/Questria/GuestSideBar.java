@@ -29,44 +29,44 @@ public class GuestSideBar {
 
     PageBuilder pageBuilder = new PageBuilder();
 
-    public GuestSideBar() {
-        educationBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showGuestEducationTopicPage();
-            }
-        });
-        travelBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showGuestTravelPage();
-            }
-        });
-        moviesTVBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showGuestMoviesTvPage();
-            }
-        });
-        gamesBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showGuestGamesPage();
-            }
-        });
-        foodsDrinksBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showGuestFoodsPage();
-            }
-        });
-        musicBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showGuestMusicPage();
-            }
-        });
-    }
+//    public GuestSideBar() {
+//        educationBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showGuestEducationTopicPage();
+//            }
+//        });
+//        travelBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showGuestTravelPage();
+//            }
+//        });
+//        moviesTVBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showGuestMoviesTvPage();
+//            }
+//        });
+//        gamesBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showGuestGamesPage();
+//            }
+//        });
+//        foodsDrinksBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showGuestFoodsPage();
+//            }
+//        });
+//        musicBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showGuestMusicPage();
+//            }
+//        });
+//    }
 
     public JPanel getGuestSideBarPanel() {
         homeBtn.setIcon(homeIcon);

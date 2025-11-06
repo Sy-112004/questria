@@ -10,56 +10,133 @@ import java.net.URL;
 
 public class UserPopupOnOwnPost {
 
-    private static final Color POPUP_BG  = new Color(0xCCDBFD);
-    private static final int   ICON_SIZE = 22;
+    // Popup + button styling
+    private static final int   ARC        = 14;
+    private static final Color CARD_BG    = new Color(0xCCDBFD); // popup background
+    private static final Color HOVER_BG   = new Color(0xE5EAF5); // hover gray
+    private static final int   ICON_SIZE  = 22;
 
-    // Fraunces if present; otherwise Serif
-    private static final Font FRAUNCES_16B = loadFraunces();
-    private static Font loadFraunces() {
+    private static final Font FRAUNCES_16B = loadFraunces(Font.BOLD, 16f);
+
+    /** Rounded popup with three rounded pill-buttons (Edit / Delete / Lock), left-aligned, popup hugs content. */
+    public static JPopupMenu build(Runnable onEdit, Runnable onDelete, Runnable onLock) {
+        RoundedPopupMenu popup = new RoundedPopupMenu(CARD_BG, ARC);
+
+        JPanel content = new JPanel();
+        content.setOpaque(false);
+        content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
+        // tiny padding so popup just fits the text
+        content.setBorder(new EmptyBorder(6, 8, 6, 8));
+
+        JButton editBtn   = pill("Edit",   loadIconSmart("edit.png", "pencil.png", "edit_pen.png"));
+        JButton deleteBtn = pill("Delete", loadIconSmart("delete.png", "trash.png", "bin.png"));
+        JButton lockBtn   = pill("Lock",   loadIconSmart("lock.png", "padlock.png"));
+
+        if (onEdit   != null) editBtn.addActionListener(e -> onEdit.run());
+        if (onDelete != null) deleteBtn.addActionListener(e -> DeleteConfirmationDialog.show(popup.getInvoker(), onDelete));
+        if (onLock   != null) lockBtn.addActionListener(e -> LockConfirmationDialog.show(popup.getInvoker(), onLock));
+
+        for (JButton b : new JButton[]{editBtn, deleteBtn, lockBtn}) {
+            b.setAlignmentX(Component.LEFT_ALIGNMENT);           // left aligned text+icon
+            b.setMaximumSize(b.getPreferredSize());              // let popup hug content
+            content.add(b);
+            content.add(Box.createVerticalStrut(4));             // small gap
+        }
+        // remove last gap
+        content.remove(content.getComponentCount() - 1);
+
+        popup.add(content);
+        return popup;
+    }
+
+    // ---------- Pill button (rounded; default = same color as popup; hover = gray) ----------
+    private static JButton pill(String text, Icon icon) {
+        return new JButton(text, icon) {
+            {
+                setFont(FRAUNCES_16B);
+                setForeground(Color.BLACK);
+                setContentAreaFilled(false);
+                setBorderPainted(false);
+                setFocusPainted(false);
+                setOpaque(false);
+                setHorizontalAlignment(SwingConstants.LEFT);
+                setIconTextGap(8);
+                // inner padding (keeps preferred size minimal)
+                setBorder(new EmptyBorder(6, 10, 6, 10));
+            }
+            @Override protected void paintComponent(Graphics g) {
+                Graphics2D g2 = (Graphics2D) g.create();
+                g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+                // default: same color as popup -> visually seamless
+                g2.setColor(CARD_BG);
+                g2.fill(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 18, 18));
+
+                // hover/press: gray highlight with rounded corner
+                if (getModel().isRollover() || getModel().isPressed()) {
+                    g2.setColor(HOVER_BG);
+                    g2.fill(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 18, 18));
+                }
+
+                g2.dispose();
+                super.paintComponent(g);
+            }
+        };
+    }
+
+    // ---------- Rounded, fully transparent popup (no white rectangle; hugs content) ----------
+    static class RoundedPopupMenu extends JPopupMenu {
+        private final Color bg;
+        private final int arc;
+
+        RoundedPopupMenu(Color bg, int arc) {
+            this.bg = bg;
+            this.arc = arc;
+            setOpaque(false);
+            setBackground(new Color(0, 0, 0, 0));      // transparent container
+            setBorder(new EmptyBorder(2, 2, 2, 2));    // tiny outer padding
+            setBorderPainted(false);
+            setLightWeightPopupEnabled(true);          // avoid heavyweight window halos
+        }
+
+        @Override public boolean isOpaque() { return false; }
+
+        @Override protected void paintComponent(Graphics g) {
+            int w = getWidth(), h = getHeight();
+            Graphics2D g2 = (Graphics2D) g.create();
+            g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+            // draw only the rounded card (no shadow -> no rectangular halo)
+            Shape card = new RoundRectangle2D.Double(0, 0, w, h, arc, arc);
+            g2.setColor(bg);
+            g2.fill(card);
+
+            // clip children inside rounded shape and paint them
+            g2.setClip(card);
+            super.paintChildren(g2);
+
+            g2.dispose();
+        }
+
+        // children are painted with clipping above
+        @Override protected void paintChildren(Graphics g) { /* no-op */ }
+    }
+
+    // ---------- Fonts ----------
+    private static Font loadFraunces(int style, float size) {
         try (var in = UserPopupOnOwnPost.class.getResourceAsStream("/fonts/Fraunces-Regular.ttf")) {
             if (in != null) {
                 Font base = Font.createFont(Font.TRUETYPE_FONT, in);
                 GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(base);
-                return base.deriveFont(Font.BOLD, 16f);
+                return base.deriveFont(style, size);
             }
         } catch (Exception ignored) {}
-        return new Font("Fraunces 72pt", Font.BOLD, 16);
+        Font f = new Font("Fraunces 72pt", style, (int) size);
+        if (!"Fraunces 72pt".equals(f.getFamily())) f = new Font("Serif", style, (int) size);
+        return f.deriveFont(size);
     }
 
-    /** Build: Edit / Delete / Lock */
-    public static JPopupMenu build(Runnable onEdit, Runnable onDelete, Runnable onLock) {
-        RoundedPopupMenu popup = new RoundedPopupMenu(POPUP_BG, 18, 8);
-
-        Icon editIcon   = loadIconSmart("edit.png", "pencil.png", "edit_pen.png");
-        Icon deleteIcon = loadIconSmart("delete.png", "trash.png", "bin.png");
-        Icon lockIcon   = loadIconSmart("lock.png", "padlock.png");
-
-        // Show confirmation dialog before actual delete
-        popup.add(menuItem("Edit",   editIcon,   onEdit));
-        popup.add(menuItem("Delete", deleteIcon, () -> {
-            DeleteConfirmationDialog.show(popup.getInvoker(), onDelete);
-        }));
-//        popup.add(menuItem("Lock",   lockIcon,   onLock));
-        popup.add(menuItem("Lock", lockIcon, () -> {
-            LockConfirmationDialog.show(popup.getInvoker(), onLock);
-        }));
-
-        return popup;
-    }
-
-    private static JMenuItem menuItem(String text, Icon icon, Runnable onClick) {
-        JMenuItem it = new JMenuItem(text, icon);
-        it.setFont(FRAUNCES_16B);
-        it.setForeground(Color.BLACK);
-        it.setOpaque(false);
-        it.setBorder(new EmptyBorder(6, 8, 6, 8));
-        it.setIconTextGap(10);
-        it.addActionListener(e -> { if (onClick != null) onClick.run(); });
-        return it;
-    }
-
-    // --------- SAFE ICON LOADER (no -1 width/height) ---------
-
+    // ---------- Safe icon loading & scaling ----------
     private static Icon loadIconSmart(String... candidateNames) {
         for (String name : candidateNames) {
             // classpath: /assets/name
@@ -87,109 +164,19 @@ public class UserPopupOnOwnPost {
                 Graphics2D g2 = (Graphics2D) g.create();
                 g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
                 g2.setColor(Color.GRAY);
-                g2.setStroke(new BasicStroke(2f));
-                g2.drawRoundRect(x + 2, y + 2, ICON_SIZE - 4, ICON_SIZE - 4, 6, 6);
+                g2.drawRoundRect(x+2, y+2, ICON_SIZE-4, ICON_SIZE-4, 8, 8);
                 g2.dispose();
             }
         };
     }
 
-    /** Draw the source icon into a new buffered image of the target size (never queries source width/height). */
-    private static Icon scaleIcon(ImageIcon src, int targetW, int targetH) {
-        BufferedImage out = new BufferedImage(targetW, targetH, BufferedImage.TYPE_INT_ARGB);
+    private static Icon scaleIcon(ImageIcon src, int w, int h) {
+        BufferedImage out = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2 = out.createGraphics();
         g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,  RenderingHints.VALUE_ANTIALIAS_ON);
-        g2.drawImage(src.getImage(), 0, 0, targetW, targetH, null);
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2.drawImage(src.getImage(), 0, 0, w, h, null);
         g2.dispose();
         return new ImageIcon(out);
-    }
-
-    // --------- rounded popup card (NO WHITE RECTANGLE) ---------
-
-    static class RoundedPopupMenu extends JPopupMenu {
-        private final int arc, shadow;
-        private final Color bg;
-        private Shape clipShape;
-
-        RoundedPopupMenu(Color bg, int arc, int shadow) {
-            this.bg = bg;
-            this.arc = arc;
-            this.shadow = shadow;
-
-            // CRITICAL: Force complete transparency to remove white rectangle
-            setOpaque(false);
-            setBackground(new Color(0, 0, 0, 0));
-            setBorder(new EmptyBorder(12, 16, 12, 16));
-            setBorderPainted(false);
-
-            // Force lightweight popup to avoid heavyweight window issues
-            setLightWeightPopupEnabled(true);
-        }
-
-        @Override
-        public void setVisible(boolean b) {
-            super.setVisible(b);
-            if (b) {
-                // Make the popup window transparent
-                Window window = SwingUtilities.getWindowAncestor(this);
-                if (window != null) {
-                    window.setBackground(new Color(0, 0, 0, 0));
-                }
-            }
-        }
-
-        @Override public boolean isOpaque() {
-            return false;
-        }
-
-        @Override public void updateUI() {
-            super.updateUI();
-            // Force transparency even after UI updates
-            setOpaque(false);
-            setBackground(new Color(0, 0, 0, 0));
-            setBorderPainted(false);
-            setLightWeightPopupEnabled(true);
-        }
-
-        @Override protected void paintComponent(Graphics g) {
-            int w = getWidth(), h = getHeight();
-            Graphics2D g2 = (Graphics2D) g.create();
-            g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-
-            // soft shadow
-            for (int i = shadow; i > 0; i--) {
-                float alpha = 0.07f * (i / (float) shadow);
-                g2.setColor(new Color(0, 0, 0, Math.min(80, Math.round(255 * alpha))));
-                g2.fillRoundRect(i, i, w - i * 2, h - i * 2, arc, arc);
-            }
-
-            // card
-            int iw = w - shadow * 2;
-            int ih = h - shadow * 2;
-            g2.setColor(bg);
-            g2.fillRoundRect(0, 0, iw, ih, arc, arc);
-
-            // define clip for children so nothing paints outside rounded area
-            clipShape = new RoundRectangle2D.Double(0, 0, iw, ih, arc, arc);
-            g2.dispose();
-        }
-
-        @Override protected void paintChildren(Graphics g) {
-            if (clipShape != null) {
-                Graphics2D g2 = (Graphics2D) g.create();
-                g2.setClip(clipShape);
-                super.paintChildren(g2);
-                g2.dispose();
-            } else {
-                super.paintChildren(g);
-            }
-        }
-
-        @Override public Insets getInsets() {
-            Insets in = super.getInsets();
-            // add space for the drawn shadow so content doesn't overlap it
-            return new Insets(in.top + shadow, in.left + shadow, in.bottom + shadow, in.right + shadow);
-        }
     }
 }

@@ -4,6 +4,8 @@ import Questria.PopUp.AdminPopupOnPost;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -41,13 +43,19 @@ public class post { // consider renaming to Post
             );
             popup.show(moreBtn, 0, moreBtn.getHeight() + 6);
         });
-        postPanel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                pageBuilder.showGuestViewPostPage();
-            }
-        });
+//        postPanel.addMouseListener(new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                super.mouseClicked(e);
+//                pageBuilder.showGuestViewPostPage();
+//            }
+//        });
+//        commentBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserCommentOnPostPage();
+//            }
+//        });
     }
 
     public JPanel getPostPanel() {

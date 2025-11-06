@@ -5,8 +5,11 @@ import java.awt.*;
 
 public class LandingPage {
     public static void main(String[]args) {
-        LandingPage landingPage = new LandingPage();
-        landingPage.getLandingPageFrame();
+
+        PageBuilder pageBuilder = new PageBuilder();
+        pageBuilder.showLandingPage();
+//        LandingPage landingPage = new LandingPage();
+//        landingPage.getLandingPageFrame();
     }
 
         public JFrame getLandingPageFrame(){
@@ -30,11 +33,11 @@ public class LandingPage {
             landingPageFrame.setLayout(null);
             landingPageFrame.setTitle("QUESTRIA : LandingPage");
             landingPageFrame.setResizable(false);
-            landingPageFrame.setVisible(true);
 
             landingPageFrame.add(landingPageHeaderPanel.getLandingPageHeaderPanel());
             landingPageFrame.add(landingPageLogInPanel.getLandingPageLogInPanel());
             landingPageFrame.add(landingPageElementPanel.getLandingPageElement());
+
             return landingPageFrame;
         }
     }

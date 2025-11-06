@@ -38,14 +38,14 @@ public class followTopics {
 
     PageBuilder pageBuilder = new PageBuilder();
 
-    public followTopics() {
-        nextBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                pageBuilder.showRegisteredUserHomePage();
-            }
-        });
-    }
+//    public followTopics() {
+//        nextBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                pageBuilder.showRegisteredUserHomePage();
+//            }
+//        });
+//    }
 
     public JPanel getFollowTopicsPanel() {
         eduLbl.setIcon(eduIcon);

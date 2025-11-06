@@ -2,6 +2,10 @@ package Questria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class RegisteredUserHeader {
     private JPanel RegisteredUserHeaderPanel;
@@ -13,6 +17,25 @@ public class RegisteredUserHeader {
 
     ImageIcon searchIcon = new ImageIcon(new ImageIcon("assets/search.png").getImage().getScaledInstance(30,30, Image.SCALE_DEFAULT));
     ImageIcon profileIcon = new ImageIcon(new ImageIcon("assets/profile.png").getImage().getScaledInstance(45,45,Image.SCALE_DEFAULT));
+
+    PageBuilder pageBuilder = new PageBuilder();
+
+//    public RegisteredUserHeader() {
+//        postBtn.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+////                pageBuilder.showRegisteredUserCreatePostPage();
+//            }
+//        });
+//        profileLbl.addMouseListener(new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                super.mouseClicked(e);
+////                pageBuilder.showRegisteredUserViewProfile();
+//            }
+//        });
+//    }
+
     public JPanel getRegisteredUserHeaderPanel() {
         searchLbl.setIcon(searchIcon);
         profileLbl.setIcon(profileIcon);
